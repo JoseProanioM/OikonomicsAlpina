@@ -113,7 +113,7 @@ hr {{ border-color: rgba(255,255,255,0.15); }}
 # ── Load data ──────────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    df = pd.read_csv("https://github.com/JoseProanioM/OikonomicsAlpina/blob/99775a724d4165034ac174b61a5b5b34df2bba1f/data/precios.csv")
+    df = pd.read_csv("https://raw.githubusercontent.com/JoseProanioM/OikonomicsAlpina/99775a724d4165034ac174b61a5b5b34df2bba1f/data/precios.csv")
     df["Variedad"] = df["Variedad"].fillna("—")
     df["Tipo de Producto"] = df["Tipo de Producto"].fillna("—")
     df["Precio con escenario"] = df["Precio Percha SMX"] + df["Aumento de precio"]
